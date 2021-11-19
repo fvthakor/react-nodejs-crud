@@ -17,19 +17,6 @@ app.use(cors())
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, './my-app/build')));
 
-app.get('/', (req,res) => {
-  res.sendFile(path.join(__dirname, './my-app/build/index.html'));
-});
-app.get('/:id', (req,res) => {
-  res.sendFile(path.join(__dirname, './my-app/build/index.html'));
-});
-app.get('/:id/:data', (req,res) => {
-  res.sendFile(path.join(__dirname, './my-app/build/index.html'));
-});
-app.get('/:id/:data/:test', (req,res) => {
-  res.sendFile(path.join(__dirname, './my-app/build/index.html'));
-});
-
 app.get('/api/books', (req, res) => {
   console.log('api/bokks called!!!!!!!')
   res.json(books);
@@ -79,6 +66,18 @@ app.post('/api/book', (req, res) => {
   res.json("book addedd");
 });
 
+app.get('/', (req,res) => {
+  res.sendFile(path.join(__dirname, './my-app/build/index.html'));
+});
+app.get('/:id', (req,res) => {
+  res.sendFile(path.join(__dirname, './my-app/build/index.html'));
+});
+app.get('/:id/:data', (req,res) => {
+  res.sendFile(path.join(__dirname, './my-app/build/index.html'));
+});
+app.get('/:id/:data/:test', (req,res) => {
+  res.sendFile(path.join(__dirname, './my-app/build/index.html'));
+});
 
 app.listen(process.env.PORT || 5000, () => {
     console.log(`Server listening on the port::5000`);
