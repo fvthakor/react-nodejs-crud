@@ -81,5 +81,5 @@ app.get('/:id/:data/:test', (req,res) => {
 
 
 app.listen(process.env.PORT || 5000, () => {
-    console.log(`Server listening on the port::${port}`);
+    console.log(`Server listening on the port::5000`);
 });
