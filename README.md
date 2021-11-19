@@ -1,9 +1,8 @@
-# react-nodejs-crud
-# react-Book-todo-app
-
+# react nodejs crud
 Example Project demonstrating how to develop React application with Nodejs 
 
-App functionality: 
+# react Book todo app
+Book App functionality: 
 
 - Create a new book
 - Update an existing book
