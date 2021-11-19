@@ -17,6 +17,19 @@ app.use(cors())
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, './my-app/build')));
 
+app.get('/', (req,res) => {
+  res.sendFile(path.join(__dirname, '../my-app/build/index.html'));
+});
+app.get('/:id', (req,res) => {
+  res.sendFile(path.join(__dirname, '../my-app/build/index.html'));
+});
+app.get('/:id/:data', (req,res) => {
+  res.sendFile(path.join(__dirname, '../my-app/build/index.html'));
+});
+app.get('/:id/:data/:test', (req,res) => {
+  res.sendFile(path.join(__dirname, '../my-app/build/index.html'));
+});
+
 app.get('/api/books', (req, res) => {
   console.log('api/bokks called!!!!!!!')
   res.json(books);
@@ -64,19 +77,6 @@ app.post('/api/book', (req, res) => {
   bookIds.push(book._id);
   books.push(book);
   res.json("book addedd");
-});
-
-app.get('/', (req,res) => {
-  res.sendFile(path.join(__dirname, '../my-app/build/index.html'));
-});
-app.get('/:id', (req,res) => {
-  res.sendFile(path.join(__dirname, '../my-app/build/index.html'));
-});
-app.get('/:id/:data', (req,res) => {
-  res.sendFile(path.join(__dirname, '../my-app/build/index.html'));
-});
-app.get('/:id/:data/:test', (req,res) => {
-  res.sendFile(path.join(__dirname, '../my-app/build/index.html'));
 });
 
 
