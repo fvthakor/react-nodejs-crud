@@ -8,7 +8,7 @@ const webpack_config = require('./webpack.config.js');
 var exec = require('child_process').exec;
 
 const paths = {
-  prod_build: './prod-build',
+  prod_build: './my-app/build',
   server_file_name: 'server.bundle.js',
   react_src: './my-app/build/**/*',
   react_dist: './my-app/build',
@@ -17,7 +17,7 @@ const paths = {
 
 function clean()  {
   log('removing the old files in the directory')
-  return del('./prod-build/**', {force:true});
+  return del('./my-app/build/**', {force:true});
 }
 
 function createProdBuildFolder() {
