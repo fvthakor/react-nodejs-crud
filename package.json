@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/"
+    "url": "git+https://github.com/fvthakor/react-nodejs-crud"
   },
   "author": "Fulaji Thakor",
-  "license": "ISC",
+  "license": "",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
