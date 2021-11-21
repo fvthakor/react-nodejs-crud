@@ -15,7 +15,7 @@ The website is built in my favourite Tech Stack and deployed on [Heroku](https:/
 
 - [Angular](https://angular.io/) for building React Components.
 - [SB Admin 2](https://startbootstrap.com/theme/sb-admin-2) for styling.
-- [Nodejs](https://nodejs.org/en/) for server.
+- [Nodejs](https://nodejs.org/en/) for server side code(backend).
 - [Expressjs](https://expressjs.com/) for routing.
 
 
